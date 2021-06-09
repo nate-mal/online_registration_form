@@ -9,16 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">    <title>Code Review SignUp</title>
 </head>
-
-<header>
-    <h1 class="title">THE CODE REVIEW</h1>
+<body>
     
-    <div class="main-header">
-       <h2 class="no-margin-b">Signup for our newsletter</h2>
-       <p class="light">Get the latest news on how your code is doing right in your inbox</p>
-    </div>
+<header>
+    <h1 class="title">THE CODE REVIEW</h1> 
 </header>
 <main>
+    <div class="wrapper">
+        <div class="main-header">
+            <h2 class="no-margin-b">Signup for our newsletter</h2>
+            <p class="light">Get the latest news on how your code is doing right in your inbox</p>
+         </div>
 <section>
     <form>
         <fieldset>
@@ -54,20 +55,17 @@
                  <input type="radio" id="format-html" value="format-html" name="format"><label for="format-html">HTML</label><br>
                  <input type="radio" id="format-plain" value="format-plain" name="format"><label for="format-plain">Plain text</label><br>
 
-
+                  <label class="light">Other topics you'd like to hear about.</label>
+                  <textarea name="news_other" id="news_other" ></textarea>
                 </fieldset>
+                <button type="submit" id="submit">Sign Up</button>       
     </form>
-
+    <p class="light it t-al-center">Copyright The Code Review</p>
 </section>
 
+
+</div>
 </main>
 
-
-
-
-
-
-<body>
-    
 </body>
 </html>
