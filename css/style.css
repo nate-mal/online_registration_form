@@ -1,0 +1,107 @@
+
+/* :::::::Base style:::::: */
+
+:root {
+    font-family: 'Lora', serif;
+}
+
+
+
+
+
+/* :::::::OOP style:::::: */
+.light {
+    color:gray;
+    margin-top:8px;
+}
+.no-margin-b{
+    margin-bottom:0; 
+}
+
+
+
+
+
+/* :::::::Header style:::::: */
+header{
+    position:relative;
+    text-align: center;
+    border-bottom: 3px solid black;  
+    margin-bottom: 30px;;
+}
+header:after{
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:2px;
+    height:5px;
+    width:100%;
+    background-color: black;
+    
+}
+.title {
+    margin:-8px -8px 20px -8px;
+    padding: 25px 0;
+    color:white;
+    background-color: #2d3945;
+    font-size: 1.7rem;   
+}
+.main-header {
+    margin:30px 0 50px 0;
+}
+
+
+/* :::::::Main style:::::: */
+
+/* :::::::Form style:::::: */
+
+fieldset {
+    border:none;
+    padding: 0 0 25px 0;
+    margin:25px 12px;
+}
+fieldset:not(fieldset:last-of-type) {
+    border-bottom: 3px solid black;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.3rem;
+  
+}
+input:not(input[type="checkbox"]):not(input[type="radio"]),
+ select {
+    display:block;
+   width:100%;
+   height: 44px;
+   border:none;
+   border-radius: 5px;
+   background-color: #eff0f1;
+}
+input[type="number"] {
+    width:50%;
+    max-width:200px;
+}
+input::placeholder{
+    text-align: right;
+    margin-right: 10px;
+}
+label {
+    display: inline-block;
+    margin:10px 0 5px 0;
+}
+
+/* :::::::Focus style:::::: */
+
+input:focus, textarea:focus, select:focus {
+    border: 2px solid #46698b;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
