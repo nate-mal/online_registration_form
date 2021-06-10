@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 /* :::::::Base style:::::: */
 
 *,
  *:before, 
  *:after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
 
@@ -221,7 +229,9 @@ label.light{
     background-color: transparent;
     border:solid white;
     border-width: 0 3px 3px 0;
-    transform: rotate(40deg) scale(1.1);
+    -webkit-transform: rotate(40deg) scale(1.1);
+        -ms-transform: rotate(40deg) scale(1.1);
+            transform: rotate(40deg) scale(1.1);
 }
 
 /* :::::::Radio input style based on .checkbox-custom class:::::: */
@@ -235,7 +245,9 @@ label.light{
     left:2px;
     border-width: 3px;
     border-radius: 50%;
-    transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
 }
 
 
@@ -273,11 +285,16 @@ input[type="tel"]:focus,
 @media  screen and (min-width:768px) {
   
 fieldset:first-of-type{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
 }
 fieldset:first-of-type label {
-    flex:1 30%;
+    -webkit-box-flex:1;
+        -ms-flex:1 30%;
+            flex:1 30%;
 }
 
     fieldset:first-of-type input[type="text"],
@@ -285,14 +302,16 @@ fieldset:first-of-type label {
     fieldset:first-of-type input[type="number"],
     fieldset:first-of-type input[type="tel"],
     fieldset:first-of-type  select {      
-       flex:1 70%;
+       -webkit-box-flex:1;      
+           -ms-flex:1 70%;      
+               flex:1 70%;
        margin-top:10px;
    }
    fieldset:first-of-type input[type="number"] {
-      flex-basis:25%;   
+      -ms-flex-preferred-size:25%;
+          flex-basis:25%;   
       margin-right:45%;
    }
 
   
 }
-
