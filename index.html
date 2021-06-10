@@ -25,23 +25,25 @@
         <fieldset>
             <legend>Contact Information</legend>
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user-name" placeholder="Required">
+            <input required type="text" id="name" name="user-name" placeholder="Required">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="user-email" placeholder="Required">
+            <input  required type="email" id="email" name="user-email" placeholder="Required">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user-phone">
+            <input type="tel" id="phone" name="user-phone" placeholder="Ex. 0747390***">
             <label for="address">Street Address</label>
-            <input type="text" id="address" name="user-addres">
+            <input type="text" id="address" name="user-addres" placeholder="Ex. 23 Acacia Avenue">
             <label for="city">City</label>
-            <input type="text" id="city" name="user-city">
+            <input type="text" id="city" name="user-city" placeholder="Ex. New York">
             <label for="state">State</label>
             <select id="state" name="user-state">
+                <optgroup label="US">
                 <option value="no-state">Choose State</option>
                 <option value="1-state">1-State</option>
                 <option value="2-state">2-State</option>
+            </optgroup>
             </select>
             <label for="zip">Zip Code</label>
-            <input type="number" id="zip" name="user-zip">
+            <input type="number" id="zip" name="user-zip" placeholder="Ex. 415100">
             </fieldset>
 
             <fieldset>
@@ -65,7 +67,7 @@
 
                  <label class="light">Newsletter format</label><br>
                  <label  class="checkbox-label" for="format-html">
-                 <input type="radio" id="format-html" value="format-html" name="user-format">
+                 <input checked type="radio" id="format-html" value="format-html" name="user-format">
                  <span class="checkbox-custom radio"></span>
                  HTML
                 </label><br>
@@ -76,7 +78,7 @@
                 </label><br>
 
                   <label  for="news-other" class="light">Other topics you'd like to hear about.</label>
-                  <textarea name="news-other" id="news-other" ></textarea>
+                  <textarea name="news-other" id="news-other" placeholder="Ex. Python, UX Design"></textarea>
                 </fieldset>
                 <button type="submit" id="submit">Sign Up</button>       
     </form>
