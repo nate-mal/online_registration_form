@@ -254,11 +254,15 @@ label.light{
 
 
 /* :::::::Focus style:::::: */
+
+/* using :focus first and immediately after :focus-visible to undone focus style for better cross browser support */
 :focus{
     outline:2px solid #46698b;
     opacity: 100%;
 }
-:focus:not(:focus-visible) {
+
+:focus:not(:focus-visible)
+ {
     outline:none;
 }
 input[type="text"]:focus,
@@ -275,6 +279,15 @@ input[type="tel"]:focus,
     -moz-transition: opacity 0.5s;
     -ms-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
+}
+/* using :focus first and immediately after :focus-visible to undone focus style for better cross browser support */
+input[type="checkbox"]:focus ~ span,
+input[type="radio"]:focus ~ span{
+     outline: 2px solid #46698b;
+}
+input[type="checkbox"]:focus:not(:focus-visible) ~ span,
+input[type="radio"]:focus:not(:focus-visible) ~ span{
+     outline: none;
 }
 
 
@@ -312,6 +325,5 @@ fieldset:first-of-type label {
           flex-basis:25%;   
       margin-right:45%;
    }
-
   
 }
