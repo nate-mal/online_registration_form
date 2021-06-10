@@ -47,16 +47,36 @@
             <fieldset>
               <legend>Newsletter</legend>
                  <label class="light">Select the newsletter you would like to recive</label><br>
-                 <input type="checkbox" id="html-news" value="news-html" name="news-html"><label for="html-news">HTML News</label><br>
-                 <input type="checkbox" id="css-news" value="news-css" name="news-css"><label for="css-news">CSS News</label><br>
-                 <input type="checkbox" id="javascript-news"  value="news-javascript" name="news-javascript"><label for="javascript-news">Javascript News</label><br>
-                
-                 <label class="light">Newsletter format</label><br>
-                 <input type="radio" id="format-html" value="format-html" name="format"><label for="format-html">HTML</label><br>
-                 <input type="radio" id="format-plain" value="format-plain" name="format"><label for="format-plain">Plain text</label><br>
+                 <label class="checkbox-label" for="html-news">
+                 <input type="checkbox" id="html-news" value="news-html" name="user-news">
+                 <span class="checkbox-custom"></span> 
+                 News
+                </label><br>
+                <label class="checkbox-label" for="css-news">
+                 <input type="checkbox" id="css-news" value="news-css" name="user-news">
+                 <span class="checkbox-custom"></span>
+                 CSS News
+                </label><br>
+                <label class="checkbox-label" for="javascript-news">
+                 <input type="checkbox" id="javascript-news"  value="news-javascript" name="user-news">
+                 <span class="checkbox-custom"></span>
+                 Javascript News
+                </label><br>
 
-                  <label class="light">Other topics you'd like to hear about.</label>
-                  <textarea name="news_other" id="news_other" ></textarea>
+                 <label class="light">Newsletter format</label><br>
+                 <label  class="checkbox-label" for="format-html">
+                 <input type="radio" id="format-html" value="format-html" name="user-format">
+                 <span class="checkbox-custom radio"></span>
+                 HTML
+                </label><br>
+                <label class="checkbox-label" for="format-plain">
+                <input type="radio" id="format-plain" value="format-plain" name="user-format">
+                <span class="checkbox-custom radio"></span>
+                Plain text
+                </label><br>
+
+                  <label  for="news-other" class="light">Other topics you'd like to hear about.</label>
+                  <textarea name="news-other" id="news-other" ></textarea>
                 </fieldset>
                 <button type="submit" id="submit">Sign Up</button>       
     </form>

@@ -93,6 +93,7 @@ legend {
     font-size: 1.3rem;
   
 }
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -133,6 +134,67 @@ label.light{
     font-size:1.4rem;
     font-family:inherit;
 }
+/* :::::::Custom Checkbox:::::: */
+/* hide the default style of checkbox */
+.checkbox-label {
+    position:relative;
+    padding-left:30px;
+}
+.checkbox-label input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+    cursor:pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 24px;
+    width: 24px;
+    background-color:#eff0f1;
+    border-radius: 5px;
+}
+
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+     background-color: #46698b;
+
+}
+.checkbox-label input:checked ~ .checkbox-custom:after {
+   
+    position:absolute; 
+    content: ""; 
+    left:7px; 
+    top:3px;
+    width:8px;
+    height:16px;
+    background-color: transparent;
+    border:solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(40deg) scale(1.1);
+    
+}
+
+/* :::::::Radio input style based on .checkbox-custom class:::::: */
+.checkbox-label .radio {
+    border-radius: 50%;
+}
+.checkbox-label input:checked ~.radio:after {
+    width:20px;
+    height: 20px;
+    top:2px;
+    left:2px;
+    border-width: 3px;
+    border-radius: 50%;
+    transform: rotate(0deg) scale(1);
+}
+
+
+
 
 /* :::::::Focus style:::::: */
 :focus{
@@ -155,9 +217,6 @@ input[type="tel"]:focus,
 
 /* :::::::Media queris style:::::: */
 
-@media screen and(min-width:768px){
-    
-}
 
 
 
