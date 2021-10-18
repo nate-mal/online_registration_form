@@ -1,94 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">    <title>Code Review SignUp</title>
-</head>
-<body>
-    
-<header>
-    <h1 class="title">THE CODE REVIEW</h1> 
-</header>
-<main>
-<div class="wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Code Review SignUp</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">THE CODE REVIEW</h1>
+    </header>
+    <main>
+      <div class="wrapper">
         <div class="main-header">
-            <h2 class="no-margin-b">Signup for our newsletter</h2>
-            <p class="light">Get the latest news on how your code is doing right in your inbox</p>
-         </div>
-        
-<section>
-    <form>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <label for="name">Full Name</label>
-            <input required type="text" id="name" name="user-name" placeholder="Required">
-            <label for="email">Email Address</label>
-            <input  required type="email" id="email" name="user-email" placeholder="Required">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user-phone" placeholder="Ex. 0747390***">
-            <label for="address">Street Address</label>
-            <input type="text" id="address" name="user-addres" placeholder="Ex. 23 Acacia Avenue">
-            <label for="city">City</label>
-            <input type="text" id="city" name="user-city" placeholder="Ex. New York">
-            <label for="state">State</label>
-            <select id="state" name="user-state">
+          <h2 class="no-margin-b">Signup for our newsletter</h2>
+          <p class="light">
+            Get the latest news on how your code is doing right in your inbox
+          </p>
+        </div>
+
+        <section>
+          <form>
+            <fieldset>
+              <legend>Contact Information</legend>
+              <label for="name">Full Name</label>
+              <input
+                required
+                type="text"
+                id="name"
+                name="user-name"
+                placeholder="Required"
+              />
+              <label for="email">Email Address</label>
+              <input
+                required
+                type="email"
+                id="email"
+                name="user-email"
+                placeholder="Required"
+              />
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="user-phone"
+                placeholder="Ex. 0747390***"
+              />
+              <label for="address">Street Address</label>
+              <input
+                type="text"
+                id="address"
+                name="user-addres"
+                placeholder="Ex. 23 Acacia Avenue"
+              />
+              <label for="city">City</label>
+              <input
+                type="text"
+                id="city"
+                name="user-city"
+                placeholder="Ex. New York"
+              />
+              <label for="state">State</label>
+              <select id="state" name="user-state">
                 <optgroup label="US">
-                <option value="no-state">Choose State</option>
-                <option value="1-state">1-State</option>
-                <option value="2-state">2-State</option>
-            </optgroup>
-            </select>
-            <label for="zip">Zip Code</label>
-            <input type="number" id="zip" name="user-zip" placeholder="Ex. 415100">
+                  <option value="no-state">Choose State</option>
+                  <option value="1-state">1-State</option>
+                  <option value="2-state">2-State</option>
+                </optgroup>
+              </select>
+              <label for="zip">Zip Code</label>
+              <input
+                type="number"
+                id="zip"
+                name="user-zip"
+                placeholder="Ex. 415100"
+              />
             </fieldset>
 
             <fieldset>
               <legend>Newsletter</legend>
-                 <label class="light">Select the newsletter you would like to recive</label><br>
-                 <label class="checkbox-label" for="html-news">
-                 <input type="checkbox" id="html-news" value="news-html" name="user-news">
-                 <span  class="checkbox-custom"></span> 
-                 News
-                </label><br>
-                <label class="checkbox-label" for="css-news">
-                 <input type="checkbox" id="css-news" value="news-css" name="user-news">
-                 <span  class="checkbox-custom"></span>
-                 CSS News
-                </label><br>
-                <label class="checkbox-label" for="javascript-news">
-                 <input type="checkbox" id="javascript-news"  value="news-javascript" name="user-news">
-                 <span  class="checkbox-custom"></span>
-                 Javascript News
-                </label><br>
+              <label class="light"
+                >Select the newsletter you would like to recive</label
+              ><br />
+              <label class="checkbox-label" for="html-news">
+                <input
+                  type="checkbox"
+                  id="html-news"
+                  value="news-html"
+                  name="user-news"
+                />
+                <span class="checkbox-custom"></span>
+                News </label
+              ><br />
+              <label class="checkbox-label" for="css-news">
+                <input
+                  type="checkbox"
+                  id="css-news"
+                  value="news-css"
+                  name="user-news"
+                />
+                <span class="checkbox-custom"></span>
+                CSS News </label
+              ><br />
+              <label class="checkbox-label" for="javascript-news">
+                <input
+                  type="checkbox"
+                  id="javascript-news"
+                  value="news-javascript"
+                  name="user-news"
+                />
+                <span class="checkbox-custom"></span>
+                Javascript News </label
+              ><br />
 
-                 <label class="light">Newsletter format</label><br>
-                 <label  class="checkbox-label" for="format-html">
-                 <input checked type="radio" id="format-html" value="format-html" name="user-format">
-                 <span  class="checkbox-custom radio"></span>
-                 HTML
-                </label><br>
-                <label class="checkbox-label" for="format-plain">
-                <input type="radio" id="format-plain" value="format-plain" name="user-format">
-                <span  class="checkbox-custom radio"></span>
-                Plain text
-                </label><br>
+              <label class="light">Newsletter format</label><br />
+              <label class="checkbox-label" for="format-html">
+                <input
+                  checked
+                  type="radio"
+                  id="format-html"
+                  value="format-html"
+                  name="user-format"
+                />
+                <span class="checkbox-custom radio"></span>
+                HTML </label
+              ><br />
+              <label class="checkbox-label" for="format-plain">
+                <input
+                  type="radio"
+                  id="format-plain"
+                  value="format-plain"
+                  name="user-format"
+                />
+                <span class="checkbox-custom radio"></span>
+                Plain text </label
+              ><br />
 
-                  <label  for="news-other" class="light">Other topics you'd like to hear about.</label>
-                  <textarea name="news-other" id="news-other" placeholder="Ex. Python, UX Design"></textarea>
-                </fieldset>
-                <button type="submit" id="submit">Sign Up</button>       
-    </form>
-    <p class="light it t-al-center">Copyright The Code Review</p>
-</section>
-
-
-</div>
-</main>
-
-</body>
+              <label for="news-other" class="light"
+                >Other topics you'd like to hear about.</label
+              >
+              <textarea
+                name="news-other"
+                id="news-other"
+                placeholder="Ex. Python, UX Design"
+              ></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Sign Up</button>
+          </form>
+          <p class="light it t-al-center">Copyright The Code Review</p>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
